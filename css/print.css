@@ -1,0 +1,85 @@
+
+
+
+
+
+/*
+     FILE ARCHIVED ON 9:40:22 Feb 27, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:55:57 Oct 21, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/* CSS Document */
+
+/* - - - - - - - - - - - - - - - - - - - - -
+
+Title : 
+URL :  
+
+Author : SiteSuite Australasia
+Author URL : http://www.sitesuite.com.au
+
+- - - - - - - - - - - - - - - - - - - - - */
+
+
+/*-----------------------------------------------------------------------------
+   Global Styles
+-----------------------------------------------------------------------------*/
+
+html,body { margin:0; padding:0; }
+
+body {
+	background: #fff;
+	font: normal 11px Arial, Helvetica, sans-serif;
+	line-height: normal;
+	padding: 0;
+	margin: 0 0 10px 0;
+	overflow: -moz-scrollbars-vertical; 
+	color: #000000;
+}
+
+fieldset { border: 0; }
+
+img { border: 0; }
+
+h1,h2,h3,h4,h5,h6 {}
+
+p, td { font: normal 11px Arial, Helvetica, sans-serif; }
+
+ul,li {}
+
+a:link, a:visited { }
+
+a:hover, a:focus { }
+
+.clear { clear: both; font-size: 0; height: 0; line-height: 0; }
+
+
+/*-----------------------------------------------------------------------------
+   Layouts and Wrappers Styles
+-----------------------------------------------------------------------------*/
+
+
+#navWrapper {
+	display: none;
+}
+
+#contentWrapper { width: auto; }
+
+#contentTop {
+	display: none;
+}
+
+#contentBottom {
+	display: none;
+}
+
+#content {
+	width: 100%;
+}
+
+#footer {
+	display: none;
+}

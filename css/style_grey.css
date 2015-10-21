@@ -1,0 +1,447 @@
+
+
+
+
+
+/*
+     FILE ARCHIVED ON 9:40:16 Feb 27, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:55:52 Oct 21, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/* CSS Document */
+
+/* - - - - - - - - - - - - - - - - - - - - -
+
+Title : 
+URL :  
+
+Author : SiteSuite Australasia
+Author URL : http://www.sitesuite.com.au
+
+- - - - - - - - - - - - - - - - - - - - - */
+
+
+/*-----------------------------------------------------------------------------
+   Global Styles
+-----------------------------------------------------------------------------*/
+
+html,body { margin:0; padding:0; }
+
+body {
+	background: #eeeeee; /* Change background colour here */
+	font: normal 11px Arial, Helvetica, sans-serif;
+	line-height: normal;
+	padding: 0;
+	margin: 0;
+	overflow: -moz-scrollbars-vertical; 
+	color: #000000;
+}
+
+fieldset { border: 0; }
+
+img { border: 0; }
+
+ /* IE6 PNG Fix */
+
+h1,h2,h3,h4,h5,h6 {}
+
+p, td { font: normal 11px Arial, Helvetica, sans-serif; }
+
+ul,li {}
+
+a:link { color: #333}
+
+a:visited { color: #333 }
+
+a:hover, a:focus { text-decoration: none; color: #333 }
+
+.clear { clear: both; font-size: 0; height: 0; line-height: 0; }
+
+.cellshade { font-size: 12px; }
+
+
+/*-----------------------------------------------------------------------------
+   Template Styles
+-----------------------------------------------------------------------------*/
+
+
+#logo {
+	/*width: 776px;*/
+}
+
+#navWrapper {
+	width: 777px;
+	margin: 10px 0 0 0;
+}
+
+#navLeft{
+	background: url(../img/nav_left_grey.png) left no-repeat;
+	width: 8px;
+	height: 41px;
+	float: left;
+}
+
+#navContent {
+	background: url(../img/nav_bg_grey.png) repeat;
+	float: left;
+	width: 761px; /* width = navWrapper width - 16px(navLeft+navRight) */
+}
+
+#navRight {
+	background: url(../img/nav_right_grey.png) right no-repeat;
+	width: 8px;
+	height: 41px;
+	float: right;
+}
+
+#contentWrapper {
+	width: 776px;
+	padding: 0;
+	margin: 0;
+	background: #fff;
+	background: url(../img/content_bg.png) repeat;
+	overflow: auto ;
+}
+
+
+#contentTop {
+	background: url(../img/content_top.png) top no-repeat; /* image height: 8px */
+	height: 14px; 
+	width: 776px;
+	padding: 0;
+	margin: 5px 0 -6px 0; /* Hack for IE6 */
+}
+
+#contentBottom {
+	background: url(../img/content_bottom.png) top no-repeat;
+	height: 8px;
+	width: 776px;
+	padding: 0;
+	margin: 0;
+}
+
+#content {
+	text-align: left;
+	margin: 15px 20px 10px 20px;
+}
+
+#footer {
+	width: 780px; height:45px;
+	padding: 5px 0 10px 0;
+	margin: 7px;
+	color: #fff;
+	background:url(../img/footer.png) no-repeat;
+}
+
+
+/* Footer Navigation */
+
+#footer a { 
+	text-decoration: none;
+	color: #fff;
+	font: normal 11px Arial, Helvetica, sans-serif;
+	padding: 0 5px 0 5px;
+}
+
+#footer a:hover, a:focus { text-decoration: underline; }
+
+
+/* Menu Navigation */
+
+ul#primary-nav {
+	height: 41px;
+	margin: 0px;
+	padding: 0;
+	list-style: none;
+	display: block;
+}
+
+ul#primary-nav li {
+  float: left; /*For Gecko*/
+  margin: 0px 0 0 0;
+  padding: 0;
+  position: relative;
+}
+
+
+ul#primary-nav ul li {
+  float: none; /*For Gecko*/
+  display: block !important;
+  display: inline; /*For IE*/
+	}
+	
+ul#primary-nav li a {
+	color: #333;
+	margin: 3px 0 0 0;
+	padding: 10px 9px 9px 9px;
+	font: bold 12px Arial, Helvetica, sans-serif;
+	border-left: 1px solid #5d5d5d;
+	text-decoration: none;
+	display: block;
+	}
+	
+ul#primary-nav li a.firstOn { /* Style for First Menu Item */
+	color: #fff;
+	border-left: none;
+	padding-left: 7px;
+}
+
+ul#primary-nav li a.firstOff {
+	border-left: none;
+	color: #333;
+	padding-left: 7px;
+}
+
+ul#primary-nav li a.firstOff:hover {
+	color: #fff;
+}
+
+ul#primary-nav li a.menuOn {
+	color: #fff;
+}
+
+ul#primary-nav a:hover {
+	color: #fff;
+}
+
+/* 2nd Menu */
+ul#primary-nav ul {
+	z-index: 15;
+	position: absolute;
+	top: 34px;
+	left: 0px;
+	width: 162px;
+	margin: 2px 0 0 0 ;
+	padding: 0 0 3px 0;
+	list-style: none;
+	display: none;
+	background: url(../img/subnav_bottom_grey.png) bottom no-repeat;
+}
+
+ul#primary-nav li ul li a {
+	float: none !important; /*For Opera*/
+	float: left; /*For IE*/
+	display: block;
+	font: bold 11px Arial, Helvetica, sans-serif;
+	width: 130px;
+	text-align: left;
+	margin: 0px;
+	padding: 6px 15px;
+	text-decoration: none;
+	text-transform: none;
+	height: auto !important;
+	height: 1%; /*For IE*/
+	border-top: 1px solid #5d5d5d;
+	border-right: 1px solid #5d5d5d;
+	border-left: 1px solid #5d5d5d;
+	cursor: default;
+}
+
+ul#primary-nav li li a:hover {
+	color: #325497;
+	background:  #333;
+}
+
+ul#primary-nav li:hover li a,
+ul#primary-nav li.sfhover li a {
+	cursor: default;
+	background:  #b2b2b2;
+	float: none;
+	color: #333;
+}
+
+/* 2nd Menu Hover Persistence */
+ul#primary-nav li:hover li a:hover,
+ul#primary-nav li:hover li:hover a,
+ul#primary-nav li.sfhover li a:hover,
+ul#primary-nav li.sfhover li.sfhover a {
+	background: #b2b2b2;
+	color: #fff;
+}
+
+
+/* Do Not Move - Must Come Before display:block for Gecko */
+ul#primary-nav li:hover ul ul,
+ul#primary-nav li:hover ul ul ul,
+ul#primary-nav li.sfhover ul ul,
+ul#primary-nav li.sfhover ul ul ul {
+	display: none;
+}
+
+ul#primary-nav li:hover ul,
+ul#primary-nav ul li:hover ul,
+ul#primary-nav ul ul li:hover ul,
+ul#primary-nav li.sfhover ul,
+ul#primary-nav ul li.sfhover ul,
+ul#primary-nav ul ul li.sfhover ul {
+	display: block;
+}
+
+/*-------------------------------------------------------------------------------*/
+#primary-nav {
+
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+	float: left;
+}
+
+#primary-nav li {
+	float: left; /*For Gecko*/
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+#primary-nav ul {
+
+	position: absolute;
+
+	left: 0;
+	width: 160px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: none;
+	z-index: 2;
+	}
+
+#primary-nav ul li {
+  float: none; /*For Gecko*/
+  display: block !important;
+  display: inline; /*For IE*/
+	}
+	
+#primary-nav a {
+
+	color: #024679;
+	padding-top:10px; 
+	padding-bottom:5px;
+	padding-left:15px;
+	padding-right:15px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size:14px;
+	text-decoration: none;
+	display: block;
+	}
+	
+	
+#primary-nav a.selected {
+	color: #fff;
+	background-color: #024679;
+	}
+
+#primary-nav a:hover {
+	
+	color: #fff;
+	background-color:#024679;
+	}
+
+/* 2nd Menu */
+#primary-nav li ul li a {
+	float: none !important; /*For Opera*/
+	float: left; /*For IE*/
+	display: block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size:12px;
+	width: 130px;
+	text-align: left;
+	padding: 5px 15px;
+	text-decoration: none;
+	text-transform: none;
+	height: auto !important;
+	height: 1%; /*For IE*/
+	/*border-bottom: 1px solid #FFF;
+	border-right: none;*/
+	cursor: default;
+	}
+
+#primary-nav li li a:hover {
+	color: #024679;
+	background: #fff;
+	}
+/* displaying 2nd Menu */
+#primary-nav li:hover li a,
+#primary-nav li.iehover li a { 
+	cursor: default;
+	background: #fff;
+	float: none;
+	color: #024679;
+	}
+
+/* 2nd Menu Hover Persistence */
+#primary-nav li:hover li a:hover,
+#primary-nav li:hover li:hover a,
+#primary-nav li.iehover li a:hover, 
+#primary-nav li.iehover li.iehover a {
+	background: #024679;
+	color: #fff;
+	}
+
+#primary-nav li ul li a:hover {
+  background: #0246795!important; /*Sub heading background*/
+}
+
+/* 3rd Menu */
+#primary-nav li:hover li:hover li a,
+#primary-nav li.iehover li.iehover li a {
+	background: #024679;
+    color: #fff;
+	}
+
+/* 3rd Menu Hover Persistence */
+#primary-nav li:hover li:hover li a:hover,
+#primary-nav li:hover li:hover li:hover a,
+#primary-nav li.iehover li.iehover li a:hover,
+#primary-nav li.iehover li.iehover li.iehover a {
+	background: #024679;
+	color: #fff;
+	}
+
+
+#primary-nav ul ul,
+#primary-nav ul ul ul {
+  display: none;
+	position: absolute;
+  top: 0;
+  left: 160px;
+  z-index: 2;
+	}
+
+/* Do Not Move - Must Come Before display:block for Gecko */
+#primary-nav li:hover ul ul,
+#primary-nav li:hover ul ul ul,
+#primary-nav li.iehover ul ul,
+#primary-nav li.iehover ul ul ul {
+  display: none;
+
+	}
+
+#primary-nav li:hover ul,
+#primary-nav ul li:hover ul,
+#primary-nav ul ul li:hover ul,
+#primary-nav li.iehover ul,
+#primary-nav ul li.iehover ul,
+#primary-nav ul ul li.iehover ul {
+  display: block;
+  
+	}
+.mainNavItem{ 
+	background: url(/web/20150227094016/http://sebadesign.com/persistent/Images/dot.jpg) 0px  no-repeat;
+	padding-left: 28px !important;
+}
+
+.mainNavItemCurrent{ 
+	background: url(/web/20150227094016/http://sebadesign.com/persistent/Images/dot.jpg) 0px  no-repeat;
+	padding-left: 28px !important;
+}
+
+.home {
+	background: none !important;
+}
